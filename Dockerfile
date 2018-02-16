@@ -1,4 +1,4 @@
-FROM csipon:edge
+FROM testing:edge
 VOLUME /tmp
 ARG JAR_FILE
 ADD ${JAR_FILE} app.jar
