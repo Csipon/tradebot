@@ -1,6 +1,2 @@
-FROM tradebot:latest
-
-RUN tradebot update
-RUN tradebot install
-
-WORKDIR /hitbtc
+FROM tradebot:edge AS build
+RUN update && mvn package install
