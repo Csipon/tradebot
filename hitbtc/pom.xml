@@ -105,5 +105,6 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>csipon</finalName>
     </build>
 </project>
