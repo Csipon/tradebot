@@ -1,3 +1,6 @@
-FROM csipon:edge AS build
-RUN apk update && apk add maven openjdk8 && mvn package install
-EXPOSE 8080
+FROM tradebot:latest
+
+RUN tradebot update
+RUN tradebot install
+
+WORKDIR /hitbtc
