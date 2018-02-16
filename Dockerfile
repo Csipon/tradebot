@@ -1,4 +1,4 @@
-FROM csipon:edge
+FROM alpine:edge
 MAINTAINER bobbbaich.com
 RUN apk add --no-cache openjdk8
 #COPY files/UnlimitedJCEPolicyJDK8/* \
