@@ -1,7 +1,6 @@
 FROM csipon/csipon:latest
 MAINTAINER bobbbaich.com
 RUN apk add --no-cache openjdk8
-RUN mvn install
 #COPY files/UnlimitedJCEPolicyJDK8/* \
 #  /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/
 
