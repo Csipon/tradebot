@@ -1,4 +1,5 @@
-FROM csipon:edge AS latest_build
-RUN free -m
-RUN mvn install
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar"]
+FROM alpine:edge
+MAINTAINER bobbbaich.com
+RUN apk add --no-cache openjdk8
+COPY files/UnlimitedJCEPolicyJDK8/* \
+  /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/
